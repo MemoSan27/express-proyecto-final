@@ -6,6 +6,7 @@ require('../models');
 let id;
 let token;
 
+//! ENDPONINTS PUBLICOS
 
 //*CREATE USER
 test('POST / users debe de crear un user', async() => {
@@ -57,6 +58,9 @@ test('POST /users/login credenciales incorrectas', async() => {
     
     expect(res.status).toBe(401);
 })
+
+
+//! ENDPONINTS PRIVADOS
 
 //*GET ALL USERS
 test('GET / users debe traer todos los users', async() => { 
